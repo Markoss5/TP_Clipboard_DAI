@@ -1,15 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-/**
- * Componente Header - Barra de título de la aplicación
- * Muestra el nombre de la app de forma elegante y profesional
- */
 const Header = () => {
   return (
     <View style={styles.header}>
       <Text style={styles.title}>Clipboard App</Text>
-      <Text style={styles.subtitle}>Gestiona tu portapapeles fácilmente</Text>
     </View>
   );
 };

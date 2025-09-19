@@ -15,7 +15,7 @@ import FeedbackMessage from './components/FeedbackMessage';
  * Maneja todas las operaciones de copiar, cortar y pegar
  * Incluye historial y feedback visual para el usuario
  */
-export default function App() {
+export default function App() { 
   // Estados principales
   const [text, setText] = useState('');
   const [clipboardHistory, setClipboardHistory] = useState([]);
@@ -27,7 +27,7 @@ export default function App() {
   /**
    * Función para mostrar mensajes de feedback
    * @param {string} message - Mensaje a mostrar
-   * @param {string} type - Tipo de mensaje (success, error, warning, info)
+   * @param {string} type - Tipo de mensaje (success, error, warning, info) 
    */
   const showMessage = useCallback((message, type = 'info') => {
     setFeedbackMessage(message);
